@@ -17,8 +17,7 @@ vim.opt.rtp:prepend(lazypath)
 ---@type LazySpec
 local opts = {
   spec = {
-    { import = "plugins.lsp" },
-    { import = "plugins.dev" },
+    { import = "extensions.lsp" },
   },
   defaults = {
     lazy = true,
