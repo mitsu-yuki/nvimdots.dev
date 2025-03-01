@@ -6,7 +6,7 @@ return {
     event = { "InsertEnter", "CmdlineEnter" },
     config = require("configs.nvim-cmp"),
   },
-  -- dependencies
+  -- nvim-cmp dependencies
   { "hrsh7th/cmp-nvim-lsp", event = { "InsertEnter" } },
   { "hrsh7th/cmp-buffer", event = { "InsertEnter" } },
   { "hrsh7th/cmp-path", event = { "InsertEnter" } },
