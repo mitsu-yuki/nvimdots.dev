@@ -14,6 +14,7 @@ return function()
       completion = cmp.config.window.bordered(),
       documentation = cmp.config.window.bordered(),
     },
+    ---@type cmp.SourceConfig[]
     sources = cmp.config.sources({
       { name = "nvim_lsp" },
       { name = "luasnip" },
