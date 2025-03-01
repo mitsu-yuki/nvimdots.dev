@@ -74,6 +74,7 @@ return function()
       }),
     }),
   })
+  -- ref: https://github.com/hrsh7th/nvim-cmp/wiki/Advanced-techniques/887c198ad1fa9296d9ee60ad4c7de50fa2a7cf14#add-parentheses-after-selecting-function-or-method-item1
   ---@type cmp.Event
   cmp.event:on(
     "confirm_done",
