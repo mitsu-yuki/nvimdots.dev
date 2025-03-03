@@ -21,4 +21,9 @@ return {
     event = { "BufReadPre", "BufNewFile" },
     config = require("configs.nvim-lspconfig"),
   },
+  {
+    "mfussenegger/nvim-lint",
+    event = { "BufWritePost", "BufReadPost", "InsertLeave" },
+    config = require("configs.nvim-lint"),
+  },
 }
