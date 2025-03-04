@@ -23,7 +23,7 @@ return {
   },
   {
     "mfussenegger/nvim-lint",
-    event = { "BufWritePost", "BufReadPost", "InsertLeave" },
+    event = { "BufReadPre", "BufNewFile" },
     config = require("configs.nvim-lint"),
   },
 }
