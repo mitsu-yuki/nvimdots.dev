@@ -6,14 +6,13 @@ return function()
     bash = shellcheck,
     go = { "golangcilint" },
     json = { "jsonlint" },
-    perl = { "perlcritic"},
-    sh = { "shellcheck" },
+    perl = { "perlcritic" },
+    sh = shellcheck,
     zsh = shellcheck,
   }
   vim.api.nvim_create_autocmd({"InsertLeave"}, {
     callback = function()
-      require("lint").try_lint()
+      lint.try_lint()
     end
   })
-  lint.try_lint()
 end
