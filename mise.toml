@@ -1,3 +1,6 @@
 [tools]
 lua-language-server = "latest"
 shellcheck = "0.10.0"
+
+[env]
+NVIM_APPNAME = "nvimdots.dev"
