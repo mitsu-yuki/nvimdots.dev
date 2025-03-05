@@ -8,6 +8,6 @@ return function()
       bash = shfmt,
       zsh = shfmt,
       go = { "goimports", "gofmt" },
-    }
+    },
   })
 end
