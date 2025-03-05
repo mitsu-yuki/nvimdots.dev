@@ -13,4 +13,9 @@ return {
     event = { "BufReadPre", "BufNewFile" },
     config = require("configs.nvim-lint"),
   },
+  {
+    "stevearc/conform.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    config = require("configs.conform-nvim"),
+  }
 }
