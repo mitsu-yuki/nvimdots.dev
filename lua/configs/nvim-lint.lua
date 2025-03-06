@@ -4,7 +4,6 @@ return function()
   lint.linters_by_ft = {
     ansible = { "ansible_lint" },
     bash = shellcheck,
-    go = { "golangcilint" },
     json = { "jsonlint" },
     perl = { "perlcritic" },
     sh = shellcheck,
