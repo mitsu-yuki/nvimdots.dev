@@ -3,6 +3,8 @@
 "go:golang.org/x/tools/cmd/goimports" = "0.30.0"
 "go:golang.org/x/tools/gopls" = "0.18.1"
 lua-language-server = "latest"
+"npm:bash-language-server" = "5.4.3"
+"npm:yaml-language-server" = "1.17.0"
 shellcheck = "0.10.0"
 shfmt = "3.10.0"
 stylua = "2.0.2"
