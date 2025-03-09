@@ -30,6 +30,18 @@ return function()
   lspconfig.dockerls.setup(default_opts())
   lspconfig.golangci_lint_ls.setup(default_opts())
   lspconfig.gopls.setup(default_opts())
+  lspconfig.jsonls.setup({
+    capabilities = capabilities,
+    filetypes = { "json" },
+    settings = {
+      json = {
+        schemas = schemastore.json.schemas(),
+      },
+      validate = {
+        enable = true,
+      },
+    },
+  })
   lspconfig.lua_ls.setup({
     capabilities = capabilities,
     on_init = function(client)
