@@ -23,7 +23,15 @@ return function()
     end
     return opts
   end
+  -- keymapping
+  --ref: https://github.com/neovim/nvim-lspconfig/blob/796394fd19fb878e8dbc4fd1e9c9c186ed07a5f4/README.md#suggested-configuration
+  -- Global mappings.
+  -- See `:help vim.diagnostic.*` for documentation on any of the below functions
+  vim.keymap.set("n", "<space>e", vim.diagnostic.open_float, { desc = "Open float window" })
+  vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Previous diagnostic" })
+  vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
 
+  --- lsp server setup
   lspconfig.bashls.setup(default_opts(ft.bashls))
   lspconfig.biome.setup(default_opts(ft.js_framework_like))
   lspconfig.clangd.setup(default_opts())
