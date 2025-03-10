@@ -2,6 +2,11 @@
 ---@type LazySpec[]
 return {
   {
+    "stevearc/conform.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    config = require("configs.conform-nvim"),
+  },
+  {
     "nvimdev/lspsaga.nvim",
     event = "LspAttach",
     dependencies = {
@@ -9,6 +14,11 @@ return {
       "nvim-tree/nvim-web-devicons",
     },
     config = require("configs.lspsaga"),
+  },
+  {
+    "mfussenegger/nvim-lint",
+    event = { "BufReadPre", "BufNewFile" },
+    config = require("configs.nvim-lint"),
   },
   {
     "neovim/nvim-lspconfig",
@@ -19,15 +29,5 @@ return {
     dependencies = {
       { "b0o/SchemaStore.nvim" },
     },
-  },
-  {
-    "mfussenegger/nvim-lint",
-    event = { "BufReadPre", "BufNewFile" },
-    config = require("configs.nvim-lint"),
-  },
-  {
-    "stevearc/conform.nvim",
-    event = { "BufReadPre", "BufNewFile" },
-    config = require("configs.conform-nvim"),
   },
 }
