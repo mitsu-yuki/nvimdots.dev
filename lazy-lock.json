@@ -13,6 +13,7 @@
   "hlchunk.nvim": { "branch": "main", "commit": "5465dd33ade8676d63f6e8493252283060cd72ca" },
   "lazy.nvim": { "branch": "main", "commit": "7e6c863bc7563efbdd757a310d17ebc95166cef3" },
   "lazydev.nvim": { "branch": "main", "commit": "8620f82ee3f59ff2187647167b6b47387a13a018" },
+  "lsp_signature.nvim": { "branch": "master", "commit": "02629e5bc38f6cb1a49bb43ff4a441f23335a933" },
   "lspsaga.nvim": { "branch": "main", "commit": "6063935cf68de9aa6dd79f8e1caf5df0a9385de3" },
   "lualine.nvim": { "branch": "master", "commit": "f4f791f67e70d378a754d02da068231d2352e5bc" },
   "noice.nvim": { "branch": "main", "commit": "0427460c2d7f673ad60eb02b35f5e9926cf67c59" },

@@ -7,6 +7,12 @@ return {
     config = require("configs.conform-nvim"),
   },
   {
+    "ray-x/lsp_signature.nvim",
+    event = "InsertEnter",
+    enabled = false,
+    config = require("configs.lsp-signature-nvim"),
+  },
+  {
     "nvimdev/lspsaga.nvim",
     event = "LspAttach",
     dependencies = {
