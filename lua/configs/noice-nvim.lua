@@ -17,6 +17,10 @@ return function()
     popupmenu = {
       enabled = false,
     },
+    ---@type NoicePresets
+    preset = {
+      lsp_doc_border = true,
+    },
   }
   local options = vim.tbl_deep_extend("force", {}, default_opts, user_opts)
   require("noice").setup(options)
