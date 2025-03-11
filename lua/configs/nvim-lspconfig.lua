@@ -31,6 +31,16 @@ return function()
   vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Previous diagnostic" })
   vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
 
+  vim.diagnostic.config({
+    signs = {
+      text = {
+        [vim.diagnostic.severity.ERROR] = "",
+        [vim.diagnostic.severity.WARN] = "",
+        [vim.diagnostic.severity.INFO] = "",
+        [vim.diagnostic.severity.HINT] = "",
+      },
+    },
+  })
   --- lsp server setup
   lspconfig.bashls.setup(default_opts(ft.bashls))
   lspconfig.biome.setup(default_opts(ft.js_framework_like))
