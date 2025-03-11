@@ -9,6 +9,7 @@ return function()
       debounce = 100,
     },
     code_action = {
+      show_server_name = true,
       extend_gitsigns = true,
     },
   })
