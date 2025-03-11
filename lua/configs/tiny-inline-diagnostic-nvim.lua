@@ -4,6 +4,7 @@ return function()
     options = {
       multilines = { enabled = true, always_show = true },
       show_all_diags_on_cursorline = true,
+      enable_on_insert = true,
       ---@param diagnostic vim.Diagnostic
       format = function(diagnostic)
         return string.format("%s (%s: %s)", diagnostic.message, diagnostic.source, diagnostic.code)
