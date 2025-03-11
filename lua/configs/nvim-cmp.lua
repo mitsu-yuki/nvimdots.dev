@@ -30,7 +30,7 @@ return function()
           fallback()
         end
       end,
-      ["<S-Tab>"] = function (fallback)
+      ["<S-Tab>"] = function(fallback)
         if cmp.visible() then
           cmp.select_prev_item()
         elseif luasnip.jumpable(-1) then
@@ -38,7 +38,7 @@ return function()
         else
           fallback()
         end
-      end
+      end,
     }),
     ---@type cmp.SourceConfig[]
     sources = cmp.config.sources({
@@ -50,20 +50,20 @@ return function()
       {
         name = "buffer",
         option = {
-          get_bufnrs = function ()
+          get_bufnrs = function()
             return vim.api.nvim_list_bufs()
           end,
-        keyword_length = 3,
-        }
+          keyword_length = 3,
+        },
       },
     }),
     -- search completion
     ---@type cmp.SetupProperty
-    cmp.setup.cmdline({"/", "?"}, {
+    cmp.setup.cmdline({ "/", "?" }, {
       mapping = cmp.mapping.preset.cmdline(),
       sources = {
         { name = "buffer" },
-      }
+      },
     }),
     -- command line completion
     ---@type cmp.SetupProperty
@@ -77,8 +77,5 @@ return function()
   })
   -- ref: https://github.com/hrsh7th/nvim-cmp/wiki/Advanced-techniques/887c198ad1fa9296d9ee60ad4c7de50fa2a7cf14#add-parentheses-after-selecting-function-or-method-item1
   ---@type cmp.Event
-  cmp.event:on(
-    "confirm_done",
-    cmp_autopairs.on_confirm_done()
-  )
+  cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
 end
