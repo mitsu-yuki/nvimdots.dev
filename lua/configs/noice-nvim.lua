@@ -17,8 +17,7 @@ return function()
     popupmenu = {
       enabled = false,
     },
-    ---@type NoicePresets
-    preset = {
+    presets = {
       lsp_doc_border = true,
     },
   }
