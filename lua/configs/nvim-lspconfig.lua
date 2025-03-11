@@ -38,6 +38,7 @@ return function()
   lspconfig.dockerls.setup(default_opts())
   lspconfig.golangci_lint_ls.setup(default_opts())
   lspconfig.gopls.setup(default_opts())
+  lspconfig.ts_ls.setup(default_opts())
   lspconfig.jsonls.setup({
     capabilities = capabilities,
     filetypes = { "json" },
