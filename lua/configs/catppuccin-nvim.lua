@@ -2,7 +2,12 @@ return function()
   ---@type Catppuccin
   require("catppuccin").setup({
     flavour = "mocha",
-    transparent_background = false,
+    custom_highlights = function(colors)
+      return {
+        LineNr = { fg = colors.subtext0 },
+      }
+    end,
+    transparent_background = true,
     integrations = {
       avante = true,
       barbar = true,
