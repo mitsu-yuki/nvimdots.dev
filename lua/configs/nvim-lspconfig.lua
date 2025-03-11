@@ -32,6 +32,7 @@ return function()
   vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
 
   vim.diagnostic.config({
+    virtual_text = false,
     signs = {
       text = {
         [vim.diagnostic.severity.ERROR] = "",
