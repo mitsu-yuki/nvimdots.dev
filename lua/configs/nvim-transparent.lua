@@ -4,9 +4,5 @@ return function()
       "NormalFloat",
       "LazyNormal",
     },
-    exclude_groups = {
-      "LineNr",
-      "CursorLineNr",
-    },
   })
 end
