@@ -43,4 +43,18 @@ return {
       { "h", mode = "c" },
     },
   },
+  {
+    "dstein64/vim-startuptime",
+    cmd = { "StartupTime" },
+    config = require("configs.vim-startuptime"),
+  },
+  {
+    "folke/which-key.nvim",
+    event = { "CursorHold", "CursorHoldI" },
+    init = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 500
+    end,
+    config = require("configs.which-key"),
+  },
 }
