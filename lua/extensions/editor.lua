@@ -7,6 +7,11 @@ return {
     config = function() end,
   },
   {
+    "jinh0/eyeliner.nvim",
+    event = { "BufRead", "BufEnter" },
+    config = require("configs.eyeliner-nvim"),
+  },
+  {
     "monaqa/dial.nvim",
     event = { "CursorMoved" },
     config = require("configs.dial-nvim"),
