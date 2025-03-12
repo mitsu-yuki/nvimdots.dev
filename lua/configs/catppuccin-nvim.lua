@@ -4,7 +4,7 @@ return function()
     flavour = "mocha",
     custom_highlights = function(colors)
       return {
-        LineNr = { fg = colors.subtext0 },
+        LineNr = { fg = colors.overlay0 },
       }
     end,
     transparent_background = true,
