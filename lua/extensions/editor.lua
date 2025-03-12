@@ -16,4 +16,12 @@ return {
     event = "InsertEnter",
     config = require("configs.nvim-autopairs"),
   },
+  {
+    "abecodes/tabout.nvim",
+    event = "InsertEnter",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+    },
+    config = require("configs.tabout"),
+  },
 }
