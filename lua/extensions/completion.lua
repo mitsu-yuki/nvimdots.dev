@@ -20,7 +20,7 @@ return {
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
     },
-    enabled = function()
+    cond = function()
       local ollama_host = os.getenv("OLLAMA_HOST")
       if ollama_host ~= nil then
         return true
@@ -46,7 +46,7 @@ return {
   {
     "TabbyML/vim-tabby",
     lazy = false,
-    enabled = function()
+    cond = function()
       local ollama_host = os.getenv("ENABLE_TABBY")
       if ollama_host ~= nil then
         return true
