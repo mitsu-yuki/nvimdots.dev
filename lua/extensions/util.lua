@@ -10,6 +10,7 @@ return {
   {
     "tyru/capture.vim",
     cmd = { "Capture" },
+    config = require("configs.capture-vim"),
   },
   {
     "folke/lazydev.nvim",
@@ -42,6 +43,7 @@ return {
     keys = {
       { "h", mode = "c" },
     },
+    config = require("configs.vimdoc-ja"),
   },
   {
     "dstein64/vim-startuptime",

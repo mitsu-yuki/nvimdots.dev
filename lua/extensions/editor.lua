@@ -4,7 +4,7 @@ return {
   {
     "rhysd/conflict-marker.vim",
     event = { "BufReadPost", "BufNewFile" },
-    config = function() end,
+    config = require("configs.conflict-marker-vim"),
   },
   {
     "jinh0/eyeliner.nvim",
