@@ -17,6 +17,11 @@ return {
     config = require("configs.nvim-autopairs"),
   },
   {
+    "kylechui/nvim-surround",
+    event = "CursorMoved",
+    config = require("configs.nvim-surround"),
+  },
+  {
     "abecodes/tabout.nvim",
     event = "InsertEnter",
     dependencies = {
