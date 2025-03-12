@@ -2,12 +2,6 @@
 ---@type LazySpec[]
 return {
   {
-    "LunarVim/bigfile.nvim",
-    lazy = false,
-    cond = true,
-    config = require("configs.bigfile"),
-  },
-  {
     "rhysd/conflict-marker.vim",
     event = { "BufReadPost", "BufNewFile" },
     config = function() end,
