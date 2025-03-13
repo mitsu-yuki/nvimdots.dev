@@ -51,4 +51,9 @@ return {
     build = ":TSUpdate",
     config = require("configs.nvim-treesitter"),
   },
+  {
+    "sphamba/smear-cursor.nvim",
+    event = "CursorMoved",
+    config = require("configs.smear-cursor-nvim"),
+  },
 }
