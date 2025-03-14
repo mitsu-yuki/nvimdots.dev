@@ -28,6 +28,11 @@ return {
     config = require("configs.lualine-nvim"),
   },
   {
+    "mvllow/modes.nvim",
+    event = "UIEnter",
+    config = require("configs.modes-nvim"),
+  },
+  {
     "folke/noice.nvim",
     event = "VeryLazy",
     dependencies = {

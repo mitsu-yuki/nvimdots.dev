@@ -23,6 +23,7 @@
   "lsp_signature.nvim": { "branch": "master", "commit": "02629e5bc38f6cb1a49bb43ff4a441f23335a933" },
   "lspsaga.nvim": { "branch": "main", "commit": "6063935cf68de9aa6dd79f8e1caf5df0a9385de3" },
   "lualine.nvim": { "branch": "master", "commit": "f4f791f67e70d378a754d02da068231d2352e5bc" },
+  "modes.nvim": { "branch": "main", "commit": "1e34663c32e8f5d915921a938e0dc4e3e788ceb8" },
   "noice.nvim": { "branch": "main", "commit": "0427460c2d7f673ad60eb02b35f5e9926cf67c59" },
   "nui.nvim": { "branch": "main", "commit": "8d3bce9764e627b62b07424e0df77f680d47ffdb" },
   "nvim-autopairs": { "branch": "master", "commit": "68f0e5c3dab23261a945272032ee6700af86227a" },
