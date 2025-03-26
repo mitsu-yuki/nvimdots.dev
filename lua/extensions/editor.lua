@@ -17,9 +17,19 @@ return {
     config = require("configs.dial-nvim"),
   },
   {
-    "ggandor/leap.nvim",
+    "folke/flash.nvim",
     event = { "CursorHold", "CursorHoldI" },
-    config = require("configs.leap-nvim"),
+    keys = {
+      {
+        "<space><space>",
+        mode = { "n", "x" },
+        function()
+          require("flash").jump()
+        end,
+        desc = "Flash",
+      },
+    },
+    config = require("configs.flash-nvim"),
   },
   {
     "windwp/nvim-autopairs",
