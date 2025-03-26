@@ -23,6 +23,12 @@ return {
     config = require("configs.hlchunk-nvim"),
   },
   {
+    "b0o/incline.nvim",
+    event = { "BufReadPost", "BufAdd", "BufNewFile" },
+    cond = false,
+    config = require("configs.incline-nvim"),
+  },
+  {
     "nvim-lualine/lualine.nvim",
     event = { "BufReadPost", "BufAdd", "BufNewFile" },
     config = require("configs.lualine-nvim"),
