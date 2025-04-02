@@ -8,6 +8,7 @@ return function()
       bash = shfmt,
       zsh = shfmt,
       go = { "goimports", "gofmt" },
+      sql = { "sqruff" },
     },
   })
   vim.api.nvim_create_autocmd("BufWritePre", {

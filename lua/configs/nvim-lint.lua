@@ -7,6 +7,7 @@ return function()
     json = { "jsonlint" },
     perl = { "perlcritic" },
     sh = shellcheck,
+    sql = { "sqruff" },
     txt = { "textlint" },
     markdown = { "textlint" },
     zsh = shellcheck,
