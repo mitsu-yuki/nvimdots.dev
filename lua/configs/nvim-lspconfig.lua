@@ -28,8 +28,12 @@ return function()
   -- Global mappings.
   -- See `:help vim.diagnostic.*` for documentation on any of the below functions
   vim.keymap.set("n", "<space>e", vim.diagnostic.open_float, { desc = "Open float window" })
-  vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Previous diagnostic" })
-  vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
+  vim.keymap.set("n", "[d", function()
+    vim.diagnostic.jump({ count = 1, float = { border = "rounded" } })
+  end, { desc = "Previous diagnostic" })
+  vim.keymap.set("n", "]d", function()
+    vim.diagnostic.jump({ count = -1, float = { border = "rounded" } })
+  end, { desc = "Next diagnostic" })
 
   ---@type vim.diagnostic.Opts
   vim.diagnostic.config({
@@ -73,7 +77,7 @@ return function()
     on_init = function(client)
       if client.workspace_folders then
         local path = client.workspace_folders[1].name
-        if vim.loop.fs_stat(path .. "/.luarc.json") or vim.loop.fs_stat(path .. "/.luarc.jsonc") then
+        if vim.uv.fs_stat(path .. "/.luarc.json") or vim.uv.fs_stat(path .. "/.luarc.jsonc") then
           return
         end
       end
