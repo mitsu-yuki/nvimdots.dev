@@ -15,6 +15,13 @@ return function()
       completion = cmp.config.window.bordered(),
       documentation = cmp.config.window.bordered(),
     },
+
+    formatting = {
+      format = require("lspkind").cmp_format({
+        mode = "text_symbol",
+        show_labelDetails = true,
+      }),
+    },
     ---@type table<string, cmp.MappingClass>
     mapping = cmp.mapping.preset.insert({
       ["<CR>"] = cmp.mapping.confirm({
