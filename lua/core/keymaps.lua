@@ -14,3 +14,5 @@ vim.keymap.set("x", "p", "P")
 --ref: https://blog.atusy.net/2023/03/03/horizontal-arrows-on-insert/
 vim.keymap.set("i", "<Left>", "<C-G>U<Left>")
 vim.keymap.set("i", "<Right>", "<C-G>U<Right>")
+
+vim.g.ftplugin_sql_omni_key = "<C-J>"
