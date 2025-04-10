@@ -1,4 +1,5 @@
 return function()
+  ---@type LspsagaConfig
   require("lspsaga").setup({
     ui = {
       border = "rounded",
