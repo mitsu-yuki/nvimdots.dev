@@ -36,9 +36,4 @@ return {
       { "b0o/SchemaStore.nvim" },
     },
   },
-  {
-    "rachartier/tiny-inline-diagnostic.nvim",
-    event = "LspAttach",
-    config = require("configs.tiny-inline-diagnostic-nvim"),
-  },
 }
