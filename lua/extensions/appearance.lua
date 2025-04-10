@@ -67,4 +67,9 @@ return {
     event = "CursorMoved",
     config = require("configs.smear-cursor-nvim"),
   },
+  {
+    "ramilito/winbar.nvim",
+    event = { "BufReadPost", "BufAdd", "BufNewFile" },
+    config = require("configs.winbar-nvim"),
+  },
 }
