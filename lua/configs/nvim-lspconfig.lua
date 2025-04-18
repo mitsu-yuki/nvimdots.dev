@@ -29,10 +29,10 @@ return function()
   -- See `:help vim.diagnostic.*` for documentation on any of the below functions
   vim.keymap.set("n", "<space>e", vim.diagnostic.open_float, { desc = "Open float window" })
   vim.keymap.set("n", "[d", function()
-    vim.diagnostic.jump({ count = 1, float = { border = "rounded" } })
+    vim.diagnostic.jump({ count = -1, float = { border = "rounded" } })
   end, { desc = "Previous diagnostic" })
   vim.keymap.set("n", "]d", function()
-    vim.diagnostic.jump({ count = -1, float = { border = "rounded" } })
+    vim.diagnostic.jump({ count = 1, float = { border = "rounded" } })
   end, { desc = "Next diagnostic" })
 
   ---@type vim.diagnostic.Opts
