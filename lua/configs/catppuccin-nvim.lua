@@ -4,6 +4,7 @@ return function()
     flavour = "mocha",
     custom_highlights = function(colors)
       return {
+        CursorLine = { bg = colors.none },
         LineNr = { fg = colors.overlay0 },
       }
     end,

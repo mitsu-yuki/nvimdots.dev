@@ -3,7 +3,6 @@ return function()
   local C = require("catppuccin.palettes").get_palette(flavour)
   require("modes").setup({
     colors = {
-      bg = "",
       copy = O,
       insert = C.green,
       visual = C.mauve,
