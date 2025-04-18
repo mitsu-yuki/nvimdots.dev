@@ -4,6 +4,7 @@ return {
   {
     "romgrk/barbar.nvim",
     event = { "BufReadPost", "BufAdd", "BufNewFile" },
+    cond = false,
     config = require("configs.barbar-nvim"),
   },
   {
