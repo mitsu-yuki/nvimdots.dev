@@ -3,20 +3,22 @@ return function()
   local lspconfig = require("lspconfig")
   local schemastore = require("schemastore")
 
+  -- common settings
+  vim.lsp.config("*", {
+    capabilities = vim.tbl_deep_extend(
+      "force",
+      {},
+      vim.lsp.protocol.make_client_capabilities(),
+      require("cmp_nvim_lsp").default_capabilities()
+    ),
+  })
   -- define variables
   local ft = require("core.filetypes")
-  local capabilities = vim.tbl_deep_extend(
-    "force",
-    {},
-    vim.lsp.protocol.make_client_capabilities(),
-    require("cmp_nvim_lsp").default_capabilities()
-  )
 
   -- define functions
   local default_opts = function(filetypes)
     ---@class lspconfig.Config
     local opts = {}
-    opts.capabilities = capabilities
 
     if filetypes then
       opts.filetypes = filetypes
@@ -61,7 +63,6 @@ return function()
   lspconfig.gopls.setup(default_opts())
   lspconfig.ts_ls.setup(default_opts())
   lspconfig.jsonls.setup({
-    capabilities = capabilities,
     filetypes = { "json" },
     settings = {
       json = {
@@ -73,7 +74,6 @@ return function()
     },
   })
   lspconfig.lua_ls.setup({
-    capabilities = capabilities,
     on_init = function(client)
       if client.workspace_folders then
         local path = client.workspace_folders[1].name
@@ -109,7 +109,6 @@ return function()
   ---@type lspconfig.Config
   lspconfig.yamlls.setup({
     filetypes = ft.yaml_like,
-    capabilities = capabilities,
     settings = {
       yaml = {
         hover = true,
