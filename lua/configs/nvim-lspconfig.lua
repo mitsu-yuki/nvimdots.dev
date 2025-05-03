@@ -49,6 +49,7 @@ return function()
     "dockerls",
     "golangci_lint_ls",
     "gopls",
+    "sqruff",
     "ts_ls",
     "jsonls",
     "lua_ls",
