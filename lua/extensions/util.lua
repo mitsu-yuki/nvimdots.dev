@@ -13,6 +13,10 @@ return {
     config = require("configs.capture-vim"),
   },
   {
+    "rktjmp/lush.nvim",
+    ft = { "lua" },
+  },
+  {
     "folke/lazydev.nvim",
     ft = "lua",
     config = require("configs.lazydev-nvim"),
