@@ -30,7 +30,7 @@ return {
     },
     keys = {
       { "<C-F>", "<cmd>Telescope find_files<CR>", desc = "find files" },
-      { "<C-G>", "<cmd>Telescope live_grep<CR>", desc = "live grep" },
+      { "<C-G>", "<cmd>Telescope live_grep_args<CR>", desc = "live grep" },
       { "<C-T>g", "<cmd>Telescope grep_string default_text=<CR>", desc = "grep string on cursor word" },
       { "<space>b", "<cmd>Telescope buffers<CR>", desc = "buffer list" },
       { "<C-T>n", "<cmd>Telescope notify<CR>", desc = "notify list" },
@@ -42,6 +42,7 @@ return {
     build = "make",
   },
   { "nvim-telescope/telescope-frecency.nvim" },
+  { "nvim-telescope/telescope-live-grep-args.nvim" },
   {
     "vim-jp/vimdoc-ja",
     keys = {

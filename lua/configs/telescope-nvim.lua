@@ -1,6 +1,7 @@
 return function()
   local telescope = require("telescope")
   local actions = require("telescope.actions")
+  local lga_actions = require("telescope-live-grep-args.actions")
   telescope.setup({
     defaults = {
       sorting_strategy = "ascending",
@@ -40,8 +41,17 @@ return function()
         override_file_sorter = true,
         case_mode = "smart_case",
       },
+      live_grep_args = {
+        auto_quoting = true,
+        mappings = {
+          i = {
+            ["<C-k>"] = lga_actions.quote_prompt(),
+          },
+        },
+      },
     },
   })
   telescope.load_extension("fzf")
   telescope.load_extension("frecency")
+  telescope.load_extension("live_grep_args")
 end
