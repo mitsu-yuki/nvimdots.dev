@@ -6,6 +6,16 @@ return function()
     defaults = {
       sorting_strategy = "ascending",
       scroll_strategy = "limit",
+      layout_strategy = "flex",
+      layout_config = {
+        flex = {
+          vertical = {
+            prompt_position = "bottom",
+            preview_height = 0.3,
+            results_height = 0.5,
+          },
+        },
+      },
       mappings = {
         i = {
           ["<C-c>"] = { "<esc>", type = "command" },
