@@ -16,6 +16,7 @@ return function()
       diagnostics.shellcheck,
       diagnostics.jsonlint,
       diagnostics.perlcritic,
+      diagnostics.sqruff,
       textlint,
       formatting.stylua,
       formatting.shfmt,
