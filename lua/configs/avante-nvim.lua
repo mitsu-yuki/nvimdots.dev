@@ -13,14 +13,13 @@ return function()
   end
   ---@type avante.Config
   require("avante").setup({
-    provider = "ollama_qwen",
-    auto_suggestions_provider = "ollama_phi4",
+    provider = "ollama_phi4-mini",
     vendors = {
       ["ollama_qwen"] = ollama_model("qwen2.5-coder:latest"),
       ["ollama_marco"] = ollama_model("marco-o1:latest"),
       ["ollama_deepseek"] = ollama_model("deepseek-coder:6.7b"),
       ["ollama_gemma2"] = ollama_model("gemma2:latest"),
-      ["ollama_phi4"] = ollama_model("phi4:latest"),
+      ["ollama_phi4-mini"] = ollama_model("phi4-mini:3.8b-fp16"),
     },
     behaviour = {
       auto_suggestions = false,
