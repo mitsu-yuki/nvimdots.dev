@@ -1,7 +1,7 @@
 return function()
   ---@type config
   require("bigfile").setup({
-    filesize = 1, -- 1MiB
+    filesize = 2, -- 1MiB
     pattern = { "*" },
     features = { -- features to disable
       "indent_blankline",
