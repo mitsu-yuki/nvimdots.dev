@@ -6,7 +6,6 @@ return function()
 
   null_ls.setup({
     sources = {
-      diagnostics.ansiblelint,
       diagnostics.sqruff,
       diagnostics.textlint,
       formatting.textlint,

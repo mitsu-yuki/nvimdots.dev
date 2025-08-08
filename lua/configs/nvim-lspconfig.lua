@@ -43,6 +43,7 @@ return function()
   })
 
   local enabled_language_server = {
+    "ansiblels",
     "bashls",
     "biome",
     "clangd",
