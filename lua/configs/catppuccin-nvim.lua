@@ -9,6 +9,10 @@ return function()
       }
     end,
     transparent_background = true,
+    float = {
+      transparent = true,
+      solid = true,
+    },
     integrations = {
       avante = true,
       barbar = true,
