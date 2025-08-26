@@ -43,7 +43,8 @@ return {
   { "onsails/lspkind.nvim", event = { "InsertEnter" } },
   -- snippet engine
   { "L3MON4D3/LuaSnip" },
-  { "saadparwaiz1/cmp_luasnip" },
+  { "rafamadriz/friendly-snippets", event = { "InsertEnter", "CmdlineEnter" } },
+  { "saadparwaiz1/cmp_luasnip",     event = { "InsertEnter" } },
   {
     "TabbyML/vim-tabby",
     lazy = false,

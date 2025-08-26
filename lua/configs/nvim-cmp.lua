@@ -1,6 +1,7 @@
 return function()
   local cmp = require("cmp")
   local luasnip = require("luasnip")
+  require("luasnip.loaders.from_vscode").lazy_load()
   local cmp_autopairs = require("nvim-autopairs.completion.cmp")
   ---@type cmp.ConfigSchema
   cmp.setup({
