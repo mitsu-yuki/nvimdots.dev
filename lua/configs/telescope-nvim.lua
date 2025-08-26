@@ -12,7 +12,6 @@ return function()
           vertical = {
             prompt_position = "bottom",
             preview_height = 0.3,
-            results_height = 0.5,
           },
         },
       },
