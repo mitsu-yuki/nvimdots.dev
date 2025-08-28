@@ -108,6 +108,11 @@ return {
     config = require("configs.toggleterm-nvim"),
   },
   {
+    "folke/trouble.nvim",
+    cmd = "Trouble",
+    config = require("configs.trouble-nvim"),
+  },
+  {
     "ntpeters/vim-better-whitespace",
     event = { "CursorHold", "CursorHoldI" },
     config = require("configs.vim-better-whitespace"),
