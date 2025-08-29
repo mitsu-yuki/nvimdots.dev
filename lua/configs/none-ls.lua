@@ -11,7 +11,6 @@ return function()
       formatting.textlint,
       formatting.stylua,
       formatting.shfmt,
-      formatting.goimports,
       formatting.gofmt,
       formatting.sqruff,
       code_actions.textlint,
