@@ -20,6 +20,10 @@ return function()
 
   vim.api.nvim_create_autocmd("BufWritePre", {
     callback = function(args)
+      if vim.v.cmdbang == 1 then
+        return nil
+      end
+
       vim.lsp.buf.format({ bufnr = args.buf })
     end,
   })
