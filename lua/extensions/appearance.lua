@@ -42,6 +42,11 @@ return {
     config = require("configs.noice-nvim"),
   },
   {
+    "kevinhwang91/nvim-hlslens",
+    event = "CmdlineEnter",
+    config = require("configs.nvim-hlslens"),
+  },
+  {
     "petertriho/nvim-scrollbar",
     event = { "BufReadPost", "BufAdd", "BufNewFile" },
     config = require("configs.nvim-scrollbar"),
