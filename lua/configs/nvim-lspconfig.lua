@@ -51,6 +51,7 @@ return function()
     "golangci_lint_ls",
     "gopls",
     "sqruff",
+    "taplo",
     "ts_ls",
     "jsonls",
     "lua_ls",
