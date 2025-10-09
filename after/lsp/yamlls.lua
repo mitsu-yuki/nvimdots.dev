@@ -7,7 +7,9 @@ return {
       hover = true,
       completion = true,
       validate = true,
-      schemas = require("schemastore").yaml.schemas(),
+      schemas = vim.tbl_extend("force", require("schemastore").yaml.schemas(), {
+        ["https://spec.openapis.org/oas/3.0/schema/2021-09-28"] = { "openapi.yaml" },
+      }),
     },
   },
 }
