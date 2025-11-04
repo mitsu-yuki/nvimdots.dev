@@ -53,6 +53,7 @@ return function()
     "sqruff",
     "taplo",
     "ts_ls",
+    "typos_lsp",
     "jsonls",
     "lua_ls",
     "yamlls",
