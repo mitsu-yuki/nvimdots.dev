@@ -9,6 +9,7 @@ return {
       validate = true,
       schemas = vim.tbl_extend("force", require("schemastore").yaml.schemas(), {
         ["https://spec.openapis.org/oas/3.0/schema/2021-09-28"] = { "openapi.yaml" },
+        ["https://spec.openapis.org/oas/3.1/schema/2022-10-07"] = {},
       }),
     },
   },
