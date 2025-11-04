@@ -63,6 +63,11 @@ return {
     config = require("configs.nvim-treesitter"),
   },
   {
+    "nvim-treesitter/nvim-treesitter-context",
+    event = "BufReadPre",
+    config = require("configs.nvim-treesitter-context"),
+  },
+  {
     "sphamba/smear-cursor.nvim",
     event = "CursorMoved",
     config = require("configs.smear-cursor-nvim"),
