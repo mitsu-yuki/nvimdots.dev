@@ -1,0 +1,7 @@
+{
+  "toml tag": {
+    "prefix": "toml",
+    "body": "`toml:\"$1\"`",
+    "description": "Snippet for struct toml tag"
+  }
+}
