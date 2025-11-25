@@ -50,12 +50,14 @@ return function()
     "dockerls",
     "golangci_lint_ls",
     "gopls",
+    "jsonls",
+    "lua_ls",
     "sqruff",
+    "tailwindcss",
     "taplo",
     "ts_ls",
     "typos_lsp",
-    "jsonls",
-    "lua_ls",
+    "unocss",
     "yamlls",
   }
 
