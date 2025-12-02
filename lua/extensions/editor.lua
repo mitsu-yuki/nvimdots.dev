@@ -81,6 +81,11 @@ return {
     config = require("configs.screenkey"),
   },
   {
+    "arnamak/stay-centered.nvim",
+    cmd = { "StayCenteredEnable", "StayCenteredDisable", "StayCenteredToggle" },
+    config = require("configs.stay-centered"),
+  },
+  {
     "abecodes/tabout.nvim",
     event = "InsertEnter",
     dependencies = {
