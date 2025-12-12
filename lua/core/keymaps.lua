@@ -21,3 +21,6 @@ vim.g.ftplugin_sql_omni_key = "<C-J>"
 -- インサートモード中に<C-V>されても無視する
 vim.keymap.set("i", "<C-V>", "")
 vim.keymap.set("i", "<C-V><C-V>", "<C-V>")
+
+-- コマンドラインウィンドウを無効化する
+vim.keymap.set("n", "q:", "<Nop>", { noremap = true, silent = true })
