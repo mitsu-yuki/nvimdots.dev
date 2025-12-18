@@ -6,14 +6,15 @@ return function()
 
   null_ls.setup({
     sources = {
+      code_actions.textlint,
       diagnostics.sqruff,
       diagnostics.textlint,
-      formatting.textlint,
-      formatting.stylua,
-      formatting.shfmt,
       formatting.gofmt,
+      formatting.prettier,
+      formatting.shfmt,
       formatting.sqruff,
-      code_actions.textlint,
+      formatting.stylua,
+      formatting.textlint,
     },
   })
 

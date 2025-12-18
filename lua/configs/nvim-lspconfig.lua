@@ -48,6 +48,7 @@ return function()
     "biome",
     "clangd",
     "dockerls",
+    "eslint",
     "golangci_lint_ls",
     "gopls",
     "jsonls",
