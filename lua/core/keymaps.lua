@@ -24,3 +24,4 @@ vim.keymap.set("i", "<C-V><C-V>", "<C-V>")
 
 -- コマンドラインウィンドウを無効化する
 vim.keymap.set("n", "q:", "<Nop>", { noremap = true, silent = true })
+vim.keymap.set("c", "q:", "<Nop>", { noremap = true, silent = true })
