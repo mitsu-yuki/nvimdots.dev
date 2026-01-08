@@ -10,6 +10,7 @@ return function()
       diagnostics.sqruff,
       diagnostics.textlint,
       formatting.gofmt,
+      formatting.goimports,
       formatting.prettier,
       formatting.shfmt,
       formatting.sqruff,
