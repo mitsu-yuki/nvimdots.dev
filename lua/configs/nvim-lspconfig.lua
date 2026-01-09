@@ -53,6 +53,7 @@ return function()
     "gopls",
     "jsonls",
     "lua_ls",
+    "rust_analyzer",
     "sqruff",
     "tailwindcss",
     "taplo",
