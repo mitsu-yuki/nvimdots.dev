@@ -22,6 +22,11 @@ return {
     config = require("configs.lazydev-nvim"),
   },
   {
+    "jghauser/mkdir.nvim",
+    lazy = false,
+    config = require("configs.mkdir-nvim"),
+  },
+  {
     "nvim-telescope/telescope.nvim",
     cmd = { "Telescope" },
     dependencies = {
