@@ -37,4 +37,9 @@ return {
       { "b0o/SchemaStore.nvim" },
     },
   },
+  {
+    "cwrau/yaml-schema-detect.nvim",
+    ft = { "yaml" },
+    config = require("configs.yaml-schema-detect"),
+  },
 }
