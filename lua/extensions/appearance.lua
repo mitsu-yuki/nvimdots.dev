@@ -60,6 +60,7 @@ return {
     "nvim-treesitter/nvim-treesitter",
     event = "BufReadPre",
     build = ":TSUpdate",
+    branch = "main",
     config = require("configs.nvim-treesitter"),
   },
   {
