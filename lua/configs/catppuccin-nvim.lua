@@ -30,6 +30,7 @@ return function()
         enabled = true,
       },
       which_key = true,
+      render_markdown = true,
     },
   })
   vim.cmd.colorscheme("catppuccin")
