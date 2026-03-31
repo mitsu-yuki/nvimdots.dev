@@ -64,5 +64,4 @@ return function()
   }
 
   vim.lsp.enable(enabled_language_server)
-  vim.cmd("LspStart")
 end
