@@ -15,6 +15,7 @@ node = "22.14.0"
 shellcheck = "0.10.0"
 shfmt = "3.10.0"
 stylua = "2.0.2"
+tree-sitter = "0.26.7"
 
 [env]
 NVIM_APPNAME = "nvimdots.dev"
