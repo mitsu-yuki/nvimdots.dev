@@ -1,42 +1,9 @@
 return function()
-  require("nvim-treesitter.config").setup({
-    highlight = {
-      enable = true,
-    },
-    ensure_installed = {
-      "bash",
-      "c",
-      "cpp",
-      "css",
-      "diff",
-      "dockerfile",
-      "git_config",
-      "git_rebase",
-      "gitattributes",
-      "gitcommit",
-      "gitignore",
-      "go",
-      "gomod",
-      "html",
-      "javascript",
-      "json",
-      "julia",
-      "kconfig",
-      "lua",
-      "make",
-      "markdown",
-      "markdown_inline",
-      "perl",
-      "python",
-      "query",
-      "rust",
-      "svelte",
-      "typescript",
-      "vhs",
-      "vim",
-      "vimdoc",
-      "vue",
-      "yaml",
-    },
+  require("nvim-treesitter").setup()
+  vim.api.nvim_create_autocmd("FileType", {
+    group = vim.api.nvim_create_augroup("nvim-treesitter-start", {}),
+    callback = function()
+      pcall(vim.treesitter.start)
+    end,
   })
 end
