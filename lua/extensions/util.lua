@@ -49,12 +49,6 @@ return {
   { "nvim-telescope/telescope-frecency.nvim" },
   { "nvim-telescope/telescope-live-grep-args.nvim" },
   {
-    "kevinhwang91/nvim-ufo",
-    dependencies = "kevinhwang91/promise-async",
-    event = "CursorMoved",
-    config = require("configs.nvim-ufo"),
-  },
-  {
     "vim-jp/vimdoc-ja",
     keys = {
       { "h", mode = "c" },
