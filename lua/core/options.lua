@@ -27,11 +27,11 @@ vim.g.mapleader = vim.keycode("<space>")
 -- don't check close buffer
 vim.opt.hidden = true
 
--- screen split derection
+-- screen split direction
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
--- sign colunm
+-- sign column
 vim.opt.signcolumn = "yes"
 -- replace preview
 vim.opt.inccommand = "split"
