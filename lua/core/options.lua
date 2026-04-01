@@ -56,7 +56,14 @@ vim.opt.listchars = { trail = "·", tab = "──" }
 vim.opt.laststatus = 3
 
 -- fold setting
-vim.opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
+vim.opt.fillchars = {
+  eob = " ",
+  foldclose = "",
+  foldopen = "",
+  foldsep = " ",
+  foldinner = " ",
+}
+vim.o.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 vim.opt.foldcolumn = "1"
 vim.opt.foldmethod = "indent"
 vim.opt.foldlevel = 99
