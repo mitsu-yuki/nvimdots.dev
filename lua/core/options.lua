@@ -63,7 +63,7 @@ vim.opt.fillchars = {
   foldsep = " ",
   foldinner = " ",
 }
-vim.o.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 vim.opt.foldcolumn = "1"
 vim.opt.foldmethod = "indent"
 vim.opt.foldlevel = 99
