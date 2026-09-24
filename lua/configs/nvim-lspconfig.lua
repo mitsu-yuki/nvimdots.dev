@@ -47,6 +47,7 @@ return function()
     "bashls",
     "biome",
     "clangd",
+    "codebook",
     "dockerls",
     "eslint",
     "golangci_lint_ls",
