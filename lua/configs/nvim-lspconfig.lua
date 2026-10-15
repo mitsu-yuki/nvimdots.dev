@@ -54,6 +54,8 @@ return function()
     "gopls",
     "jsonls",
     "lua_ls",
+    "oxfmt",
+    "oxlint",
     "rust_analyzer",
     "sqruff",
     "tailwindcss",
